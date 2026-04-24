@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: springboot-crud-junit-mockito
+  # ── MySQL ────────────────────────────────────────────────────────────────
+  datasource:
+    url: jdbc:mysql://localhost:3306/mockitoDB?createDatabaseIfNotExist=true
+    username: root
+    password: root123#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        #format_sql: true
+
+server:
+  port: 8080
